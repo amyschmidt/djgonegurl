@@ -15,7 +15,7 @@ const App = (): ReactElement => {
       <ThemeProvider theme={theme}>
         <Routes>
           <Route path="/" element={<Header />}>
-            <Route index element={<Home />} />
+            <Route index element={<Mixes />} />
             <Route path="upcoming" element={<Upcoming />} />
             <Route path="mixes" element={<Mixes />} />
             <Route path="about" element={<About />} /> 

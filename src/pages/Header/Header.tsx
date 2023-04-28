@@ -3,7 +3,8 @@ import { Box, AppBar, Toolbar, Avatar, Menu, MenuItem, IconButton, Typography, B
 import { Outlet } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
 
-const pages = [{title: 'Upcoming Sets', route: '/upcoming'}, {title: 'Mixes', route: '/mixes'}, {title: 'About', route: '/about'}];
+// const pages = [{title: 'Upcoming Sets', route: '/upcoming'}, {title: 'Mixes', route: '/mixes'}, {title: 'About', route: '/about'}];
+const pages = [{title: 'Mixes', route: '/'}]
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -40,7 +41,7 @@ const Header = () => {
                 DJ Gone Gurl
               </Typography>
 
-              <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+              {/* <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                 <IconButton
                   size="large"
                   aria-label="menu-options"
@@ -75,7 +76,7 @@ const Header = () => {
                     </MenuItem>
                   ))}
                 </Menu>
-              </Box>
+              </Box> */}
                 <Avatar alt="DJ Gone Gurl" src="/static/images/avatar/2.jpg" sx={{ marginRight: '10px', display: { xs: 'flex', md: 'none' }}} />
                 <Typography
                 variant="h5"
@@ -94,7 +95,7 @@ const Header = () => {
               >
                 DJ Gone Gurl
               </Typography>
-              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+              {/* <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 {pages.map((page) => (
                   <Button
                     component="a"
@@ -106,8 +107,8 @@ const Header = () => {
                     {page.title}
                   </Button>
                 ))}
-              </Box>
-            </Toolbar>
+              </Box>*/}
+            </Toolbar> 
         </AppBar>
       </Box>
       <Outlet />
