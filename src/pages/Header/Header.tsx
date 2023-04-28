@@ -1,21 +1,21 @@
 import * as React from 'react';
-import { Box, AppBar, Toolbar, Avatar, Menu, MenuItem, IconButton, Typography, Button } from '@mui/material';
+import { Box, AppBar, Toolbar, Avatar, Typography } from '@mui/material';
 import { Outlet } from "react-router-dom";
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 
 // const pages = [{title: 'Upcoming Sets', route: '/upcoming'}, {title: 'Mixes', route: '/mixes'}, {title: 'About', route: '/about'}];
-const pages = [{title: 'Mixes', route: '/'}]
+// const pages = [{title: 'Mixes', route: '/'}]
 
 const Header = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
+  // const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 
- const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
+//  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+//     setAnchorElNav(event.currentTarget);
+//   };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+//   const handleCloseNavMenu = () => {
+//     setAnchorElNav(null);
+//   };
 
   return (
     <div>

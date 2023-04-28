@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { Box, Card, CardMedia, CardContent, Typography, Divider } from '@mui/material';
+import { Card } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2'
-import IconButton from '@mui/material/IconButton';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import { useTheme } from '@mui/material/styles';
+// import IconButton from '@mui/material/IconButton';
+// import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+// import { useTheme } from '@mui/material/styles';
 
-const mixData = [
+// const mixData = [
   // {
   //   title: "King Tai 4.28.23",
   //   image: "/static/images/fliers/king-tai-3-24-23.jpg",
@@ -28,7 +28,7 @@ const mixData = [
   //   title: "King Tai 08.06.22",
   //   image: "/static/images/mixes/king-tai-8-6-22.jpg",
   // },
-]
+// ]
 const mixCloud = [
   {
     mixLink: "https://www.mixcloud.com/widget/iframe/?light=1&feed=%2Fdjgonegurl%2F"
@@ -99,7 +99,7 @@ const mixCloud = [
 ]
 
 const Mixes = () => {
-  const theme = useTheme();
+  // const theme = useTheme();
 
   return (
     <>
@@ -138,7 +138,7 @@ const Mixes = () => {
           {mixCloud.map((mix, index) => (
             <Grid container justifyContent="center" alignItems="center"  xs={2} sm={4} md={4} key={index}>
               <Card sx={{ maxWidth: 300, margin: 4, height: 400 }}>
-                <iframe width="100%" height="400px" src={mix.mixLink}></iframe>
+                <iframe title={`mixcloud-${index}`} width="100%" height="400px" src={mix.mixLink}></iframe>
               </Card>
             </Grid>
           ))}

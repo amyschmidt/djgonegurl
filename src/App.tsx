@@ -4,7 +4,7 @@ import theme from "theme"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Header from "pages/Header";
-import Home from "pages/Home";
+// import Home from "pages/Home";
 import Upcoming from "pages/Upcoming";
 import Mixes from "pages/Mixes";
 import About from "pages/About";
