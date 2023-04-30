@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <div>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1, overflow: 'hidden' }}>
         <AppBar position="static" color="primary">
             <Toolbar>
               <Avatar alt="DJ Gone Gurl" src="/static/images/avatar/2.jpg" sx={{ marginRight: '10px', display: { xs: 'none', md: 'flex' }}} />
@@ -36,9 +36,8 @@ const Header = () => {
                 sx={{
                   mr: 2,
                   display: { xs: 'none', md: 'flex' },
-                  fontFamily: 'monospace',
+                  fontFamily: 'Roboto',
                   fontWeight: 700,
-                  letterSpacing: '.3rem',
                   color: 'inherit',
                   textDecoration: 'none'
                 }}
@@ -84,16 +83,15 @@ const Header = () => {
               </Box>
                 <Avatar alt="DJ Gone Gurl" src="/static/images/avatar/2.jpg" sx={{ marginRight: '10px', display: { xs: 'flex', md: 'none' }}} />
                 <Typography
-                variant="h5"
+                variant="h6"
                 component="a"
                 href=""
                 sx={{
                   mr: 2,
                   display: { xs: 'flex', md: 'none' },
                   flexGrow: 1,
-                  fontFamily: 'monospace',
+                  fontFamily: 'Roboto',
                   fontWeight: 700,
-                  letterSpacing: '.3rem',
                   color: 'inherit',
                   textDecoration: 'none',
                 }}
