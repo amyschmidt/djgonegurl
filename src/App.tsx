@@ -5,9 +5,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Header from "pages/Header";
 // import Home from "pages/Home";
-import Upcoming from "pages/Upcoming";
+// import Upcoming from "pages/Upcoming";
 import Mixes from "pages/Mixes";
-import About from "pages/About";
+// import About from "pages/About";
 
 const App = (): ReactElement => {
   return (
@@ -16,9 +16,6 @@ const App = (): ReactElement => {
         <Routes>
           <Route path="/" element={<Header />}>
             <Route index element={<Mixes />} />
-            <Route path="upcoming" element={<Upcoming />} />
-            <Route path="mixes" element={<Mixes />} />
-            <Route path="about" element={<About />} /> 
           </Route>
         </Routes>
       </ThemeProvider>

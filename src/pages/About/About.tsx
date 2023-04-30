@@ -1,7 +1,15 @@
 import * as React from 'react';
+import { Container, Typography } from '@mui/material';
 
 const About = () => {
-  return <h1>About</h1>;
+  return (
+    <Container>
+      <Typography>
+        About
+      </Typography>
+
+    </Container>
+  )
 };
 
 export default About;
