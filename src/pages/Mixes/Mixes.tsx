@@ -2,37 +2,39 @@ import * as React from 'react';
 import { Card } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2'
 
-// import IconButton from '@mui/material/IconButton';
-// import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-// import { useTheme } from '@mui/material/styles';
-
 // const mixData = [
-  // {
-  //   title: "King Tai 4.28.23",
-  //   image: "/static/images/fliers/king-tai-3-24-23.jpg",
-  //   mix: "/static/images/mixes/5-21-22.mp3"
-  // },
-  // {
-  //   title: "King Tai 3.24.23",
-  //   image: "/static/images/mixes/king-tai-3-24-23.jpg",
-  //   mix: "",
-  // },
-  // {
-  //   title: "King Tai 2.24.23",
-  //   image: "/static/images/mixes/king-tai-2-24-23.jpg",
-  // },
-  // {
-  //   title: "King Tai 9.23.22",
-  //   image: "/static/images/mixes/king-tai-9-23-22.jpg",
-  // },
-  // {
-  //   title: "King Tai 08.06.22",
-  //   image: "/static/images/mixes/king-tai-8-6-22.jpg",
-  // },
+//   {
+//     title: "King Tai 4.28.23",
+//     image: "/static/images/fliers/king-tai-4-28-23.jpg",
+//     mixLink: "https://drive.google.com/file/d/1CZ7Fj7L8sRmOYCM_jwUUHKbM7sY9bXqx/preview"
+//   },
+//   {
+//     title: "King Tai 3.24.23",
+//     image: "/static/images/fliers/king-tai-3-24-23.jpg",
+//     mixLink: ""
+//   },
+//   {
+//     title: "King Tai 2.24.23",
+//     image: "/static/images/fliers/king-tai-2-24-23.jpg",
+//     mixLink: ""
+//   }
 // ]
+
 const mixCloud = [
   {
-    mixLink: "https://www.mixcloud.com/widget/iframe/?light=1&feed=%2Fdjgonegurl%2F"
+    mixLink: "https://www.mixcloud.com/widget/iframe/?light=1&feed=%2Fdjgonegurl%2Fsweet-brooklyn-101123%2F"
+  },
+  {
+    mixLink: "https://www.mixcloud.com/widget/iframe/?light=1&feed=%2Fdjgonegurl%2Ffranklin-park-10723%2F"
+  },
+  {
+    mixLink: "https://www.mixcloud.com/widget/iframe/?light=1&feed=%2Fdjgonegurl%2Fking-tai-92223%2F"
+  },
+  {
+    mixLink: "https://www.mixcloud.com/widget/iframe/?light=1&feed=%2Fdjgonegurl%2Fpride-pregame-at-crown-inn-61423%2F"
+  },
+  {
+    mixLink: "https://www.mixcloud.com/widget/iframe/?light=1&feed=%2Fdjgonegurl%2Fking-tai-923%2F"
   },
   {
     mixLink: "https://www.mixcloud.com/widget/iframe/?light=1&feed=%2Fdjgonegurl%2Fking-tai-86%2F"
@@ -100,45 +102,27 @@ const mixCloud = [
 ]
 
 const Mixes = () => {
-  // const theme = useTheme();
-
   return (
     <>
-      {/* <Grid sx={{ flexGrow: 1, margin: '25px' }} container direction="row" spacing={{ xs: 8, sm: 8, md: 8 }} columns={{ xs: 2, sm: 8, md: 12 }}>
-        {mixData.map((mix, index) => (
+      <Grid sx={{ flexGrow: 1, margin: '25px' }} container direction="row" spacing={{ xs: 8, sm: 8, md: 8 }} columns={{ xs: 2, sm: 8, md: 12 }}>
+        {/* {mixData.map((mix, index) => (
           <Grid container justifyContent="center" alignItems="center"  xs={2} sm={4} md={4} key={index}>
-             <Card sx={{ maxWidth: 300 }}>
+             <Card sx={{ maxWidth: 300, height: 350, margin: 4 }}>
               <CardMedia
                 component="img"
                 sx={{ width: 300 }}
                 image={mix.image}
-                src={mix.mix}
                 alt={`${mix.title} graphic`}
               />
-              <CardContent sx={{ flex: '1 0 auto' }}>
-                <Typography component="div" variant="h5">
-                  {mix.title}
-                </Typography>
-              </CardContent>
-              <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
-                  <IconButton aria-label="play/pause">
-                    <PlayArrowIcon sx={{ height: 38, width: 38 }} />
-                  </IconButton>
-              </Box>
-              <CardMedia
-                component="audio"
-                sx={{ width: 300 }}
-                src={mix.mix}
-              />
+              <iframe title={mix.title} width="300" height="55" src={mix.mixLink}></iframe>
             </Card>
           </Grid>
-        ))}
-        </Grid> */}
-        {/* <Divider variant="middle" /> */}
+        ))} */}
+        </Grid>
         <Grid sx={{ flexGrow: 1, margin: '25px' }} container direction="row" spacing={{ xs: 8, sm: 8, md: 8 }} columns={{ xs: 2, sm: 8, md: 12 }}>
           {mixCloud.map((mix, index) => (
             <Grid container justifyContent="center" alignItems="center"  xs={2} sm={4} md={4} key={index}>
-              <Card sx={{ maxWidth: 300, margin: 4, height: 400 }}>
+              <Card sx={{ maxWidth: 300, margin: 4, height: 350 }}>
                 <iframe title={`mixcloud-${index}`} width="100%" height="400px" src={mix.mixLink}></iframe>
               </Card>
             </Grid>
