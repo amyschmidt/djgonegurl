@@ -22,6 +22,9 @@ import Grid from '@mui/material/Unstable_Grid2'
 
 const mixCloud = [
   {
+    mixLink: "https://www.mixcloud.com/widget/iframe/?light=1&feed=%2Fdjgonegurl%2Fking-tai-102723%2F"
+  },
+  {
     mixLink: "https://www.mixcloud.com/widget/iframe/?light=1&feed=%2Fdjgonegurl%2Fsweet-brooklyn-101123%2F"
   },
   {
